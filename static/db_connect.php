@@ -19,7 +19,7 @@
  */
 
 $host="localhost";
-$dbname="shop";
+$dbname="test";
 $user="root";
 $pass="";
 

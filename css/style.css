@@ -3,18 +3,24 @@
     outline: none;
 }
 
-.login{  background-color: rgba(90, 181, 172, 0.42);
-    height: 300px;
-
-
-    color: #bdc3c7;
+.login{  background-color: rgb(22, 55, 66);
+    height: 390px;
+    overflow: hidden;
+    color: #ffffff;
+    border-radius: 50px;
+}
+.log-img{
+    width: 150px;
+    margin-bottom: 20px;
 }
 .user-log{
     position: relative;
 }
 
 .user-log input{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.49);
+    border: none;
 }
 .logform input{
     text-align: center;
@@ -26,19 +32,51 @@
     font-weight: normal;
     text-decoration: inherit;
     /*--adjust as necessary--*/
-    color: #000;
-    font-size: 1.25em;
+    color: #9b2e49;
+    font-size: 1.1em;
     padding-right: 0.5em;
     position: absolute;
     padding-left: 5px;
-    border-right:1px solid black;
-    background-color: #e74c3c;
+    border-right: 1px solid black;
+    background-color: #00a0b8;
     width: 13%;
 
 }
 .user-log:last-of-type:before{
     content: "\f023";
 }
+.remember{
+    color: #8c8c8c;
+    position: absolute;
+    left: 20px;
+}
+.remember::after{
+    content: 'Remember' 'Me';
+    position: absolute;
+    padding-left: 10px;
+    top:-4px;
+    text-wrap: none;
+}
+.login hr{
+    margin-top: 40px;
+}
 .btn-login{
-    margin-top: 60px;
+    margin-top: 10px;
+    border-radius:10px ;
+    transition: all ease-in-out 0.5s;
+
+}
+.btn-login:hover{
+    border: 1px solid white;
+}
+
+
+@keyframes log {
+    from{
+        border-radius: 20px;
+    }
+    to{
+        border-radius: 50%;
+    }
+    
 }
