@@ -1,0 +1,15 @@
+#chatbig{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid #080808;
+}
+#chatmessage{
+    width: 500px;
+    height: 450px;
+}
+#chattext{
+    width: 495px;
+    height: 50px;
+
+}
