@@ -103,7 +103,7 @@ class chat{
                 'userid'=>$chat['chatuserid']
             ));
             $datauser=$userchat->fetch();
-            echo "<br>"."<span style=' color: blue;'>".$datauser['username']." :"."</span>"."<br>".$chat['chattext'];
+            echo "<br>"."<span style=' color: red;'>".$datauser['username']." :"."</span>"."<br>".$chat['chattext'];
         }
     }
 }
