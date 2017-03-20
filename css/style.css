@@ -32,7 +32,7 @@
     font-weight: normal;
     text-decoration: inherit;
     /*--adjust as necessary--*/
-    color: #9b2e49;
+    color: #ffffff;
     font-size: 1.1em;
     padding-right: 0.5em;
     position: absolute;
@@ -49,14 +49,17 @@
     color: #8c8c8c;
     position: absolute;
     left: 20px;
+    display: inline-block;
 }
 .remember::after{
-    content: 'Remember' 'Me';
+    content: 'RememberMe';
     position: absolute;
     padding-left: 10px;
     top:-4px;
-    text-wrap: none;
+    display: inline-block;
+
 }
+
 .login hr{
     margin-top: 40px;
 }
@@ -79,4 +82,29 @@
         border-radius: 50%;
     }
     
+}
+
+
+
+@media (min-width: 768px) {
+    body{
+    }
+    .username,.password{
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    body{
+    }
+    .username,.password{
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    body{
+    }
+}
+@media (max-width: 768px) {
+    body{
+    }
 }
