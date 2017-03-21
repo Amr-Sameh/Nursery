@@ -2,12 +2,32 @@
 *{
     outline: none;
 }
+body{height: 8000px}
 
-.login{  background-color: rgb(22, 55, 66);
+.layer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+}
+.login{
+    position: fixed;
+    top:-100%;
+    background-color: rgb(22, 55, 66);
     height: 390px;
     overflow: hidden;
     color: #ffffff;
     border-radius: 50px;
+    z-index: 6;
+    transition: all 1.3s ease-in-out;
+    opacity: 0;
 }
 .log-img{
     width: 150px;
@@ -87,24 +107,32 @@
 
 
 @media (min-width: 768px) {
-    body{
-    }
+/**
+small screan
+ */
     .username,.password{
         max-width: 100%;
     }
 }
 @media (min-width: 992px) {
-    body{
-    }
+    /**
+    mid screan
+     */
     .username,.password{
         max-width: 100%;
     }
 }
 @media (min-width: 1200px) {
-    body{
-    }
+/**
+large screen
+ */
 }
 @media (max-width: 768px) {
-    body{
+    /**
+extra small screan
+ */
+    .login{
+        top:0%;
     }
+
 }

@@ -5,7 +5,9 @@
  * Date: 3/9/2017
  * Time: 3:03 PM
  */
-
+/**
+ * @TODO "USe AjAx to POST"
+ */
 
 include_once 'static/db_connect.php' ;
 
@@ -33,6 +35,10 @@ include_once 'static/header.php' ;
 
 </head>
 <body>
+<div class="layer"></div>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
 
 <div class=" login col-sm-3 col-sm-offset-4 text-center col-xs-12">
 <form method="POST" class="logform form-group input-lg " >
@@ -58,3 +64,4 @@ include_once 'static/header.php' ;
 <?php
 include 'static/footer.php';
 ?>
+
