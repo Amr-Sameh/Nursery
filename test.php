@@ -9,8 +9,23 @@ if(isset($_POST['upload'])) {
     echo $_FILES['filee']['tmp_name'];
 
 }
+include_once 'static/header.php' ;
+
 ?>
-<form method="post" enctype="multipart/form-data">
-<input type="file" name="filee" id="filee">
-<input type="submit" value="upload" name="upload">
-    </form>
+
+    <button class="btn-danger btn-lg"  type="button">login</button>
+<button>fdfd</button>
+<button>fdfd</button><br>
+<br>
+<button>fdfd</button>
+<button>fdfd</button>
+<button>fdfd</button>
+<button>fdfd</button>
+
+<h1>hasjfosfj</h1>
+
+
+<?php
+include 'static/footer.php';
+?>
+

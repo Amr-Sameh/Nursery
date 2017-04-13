@@ -27,24 +27,19 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
        echo 'hramy';
    }
 }
-include_once 'static/header.php' ;
+include_once 'static/header.php';
 
 ?>
 
 
 
-</head>
-<body>
 <div class="layer"></div>
-<h1>Hello</h1>
-<h1>Hello</h1>
-<h1>Hello</h1>
 
 <div class=" login col-sm-3 col-sm-offset-4 text-center col-xs-12">
 <form method="POST" class="logform form-group input-lg " >
 <img src="images/aTe64exyc.gif" class="img-responsive  log-img center-block">
     <span class="user-log">
-    <input type="text" class="username  " name="username" id="username" placeholder="username" autocomplete="off" required>
+    <input type="text" class="username  " name="username" id="username" placeholder="username" autocomplete="off" required >
     </span>
         <br>
 

@@ -1,0 +1,117 @@
+/*search icon*/
+.fa-search {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    margin-top: 3px;
+    font-size: 25px;
+    margin-left: 25px;
+
+}
+.fa-search:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+/*logo part */
+
+
+.logo{
+    max-width: 280px;
+    margin-top: -40px;
+    height: 100px;
+}
+@media (max-width: 768px) {
+    .logo{
+        width: 220px;
+        margin-top: -35px;
+        height: 70px;
+    }
+}
+
+
+/* nav colers*/
+.navbar-default .navbar-nav > li:nth-child(1) > a{
+    color: #2590da;
+}
+.navbar-default .navbar-nav > li:nth-child(2) > a{
+    color: #de0000;
+}
+.navbar-default .navbar-nav > li:nth-child(3) > a{
+    color: #9bcc2e;
+}
+.navbar-default .navbar-nav > li:nth-child(4) > a{
+    color: #effd00;
+}
+
+
+
+/* nav hover */
+.navbar-nav > li > a{
+    line-height: 10px;
+    font-weight:bolder;
+
+}
+.navbar-default .navbar-nav > li a:hover{
+    color: white;
+}
+.navbar-default .navbar-nav > li > .login-link{
+    background: none;
+    border: none;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.navbar-default .navbar-nav > li > .login-link:hover{
+    color: #a73b8d;
+}
+
+
+
+
+.navbar-nav > li{
+    margin-top: 20px;
+
+}
+/*nav dropdown*/
+.navbar-nav > li > .dropdown-menu{
+    left: 0px;;
+}
+
+.dropdown-menu{
+display: none;
+}
+
+
+
+/*search*/
+
+.search-btn{
+    background: none;
+    border: none;
+}
+
+
+/*nav form*/
+nav form{
+   display: none;
+}
+
+
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    nav{
+        height: 70px;
+    }
+}
+
+
+
+
+
+
+
+/* some classes for */
