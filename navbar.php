@@ -19,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo 'homee.php';?>"><img class="img-responsive logo" src="images/logo.png"></a>
+            <a class="navbar-brand" href="<?php echo 'homee.php';?>"><img class="img-responsive logo" src="images/logo2.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,7 +55,7 @@ Settings</a></li>
 
                 else {
 
-                    echo '<li ><button class="login-link" > Login</button ></li >';
+                    echo '<li ><button class="login-link nav-switch" > Login</button ></li >';
                 }
                 ?>
 
