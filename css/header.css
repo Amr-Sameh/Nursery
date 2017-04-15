@@ -1,5 +1,12 @@
+.fake{
+height: 100px;
+    width: 100%;
+display: block;
+}
+
 .navbar-default{
     margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -34,6 +41,9 @@ max-width: 330px;
     .logo{
 
         margin-top: -5px;
+    }
+    .fake{
+        height: 80px;
     }
 }
 
@@ -116,11 +126,21 @@ nav form{
     nav{
         height: 70px;
     }
+    .fake{
+        height: 100px;
+    }
 }
 
 
+/*active nav */
+.active-navbar
+{
+    background-color: #2e6da4;
 
-
+}
+.navbar-default .navbar-nav > li.active-navbar > a {
+    color: white;
+}
 
 
 

@@ -9,7 +9,8 @@
  *
  * ====================================================================
  * ====================================================================
- * ====== add variable $page-num before include this page to use it ===
+ * ===   add variable $page-num before include this page to use it  ===
+ * ===             dont include if page number = 0 or = 1           ===
  * ====================================================================
  * ====================================================================
  *
@@ -21,8 +22,12 @@ include_once 'navbar.php'
     <ul class="pagination">
 
             <?php
+
             if(!isset($_GET['page'])){
                 $_GET['page']=1;
+            }
+            if(!isset($page_num)){
+                $page_num=1;
             }
             if($_GET['page']==1 ){
                 $pre_flag="disabled";
@@ -43,6 +48,11 @@ include_once 'navbar.php'
 
 
             ?>
+        <?php
+        if($page_num!=0 || $page_num!=1){
+            echo '';
+        }
+        ?>
         <li class="<?php echo $pre_flag?>">
 
             <a   href="<?php echo $pre;?>" aria-label="Previous">
@@ -51,7 +61,9 @@ include_once 'navbar.php'
         </li>
         <?php
         for ($i=1;$i<=$page_num;$i++) {
-            echo '<li><a href="';echo $_SERVER['PHP_SELF']."?page=".$i;echo '">';
+            echo '<li class="';
+            if ($_GET['page']==$i) { echo 'active';} else echo '';
+            echo'"><a href="';echo $_SERVER['PHP_SELF']."?page=".$i;echo '">';
             echo $i;
             echo '</a></li>';
         }

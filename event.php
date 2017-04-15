@@ -34,7 +34,7 @@ $events=array("safa as f asf sa f asf as f asf","mot5lef","iuouiouioui uioui oui
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner eventslider" role="listbox">
         <?php
         $first=array_shift($events);
         echo ' <div class="item active">

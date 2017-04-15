@@ -6,9 +6,20 @@
  * Time: 11:36 م
  */
 
+
+function active($currect_page){
+    $url_array =  explode('/', $_SERVER['REQUEST_URI']) ;
+    $url = end($url_array);
+    $url=explode('?',$url);
+    $url=array_shift($url);
+    if($currect_page == $url){
+        echo 'active-navbar'; //class name in css
+    }
+}
+
 ?>
 
-<nav class="navbar navbar-default ">
+<nav class="navbar navbar-default  ">
 
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,9 +38,9 @@
 
             <!-- nav-switch class is to nav-switch between search and deafult nav -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-switch"><a class="hvr-sweep-to-right" href="<?php echo 'homee.php';?>">Home</a></li>
+                <li class="nav-switch <?php active('homee.php'); ?>"><a class="hvr-sweep-to-right " href="<?php echo 'homee.php';?>">Home</a></li>
                 <li class="nav-switch"><a class="hvr-sweep-to-right" href="">About us</a></li>
-                <li class="nav-switch"><a class="hvr-sweep-to-right" href="#">Events</a></li>
+                <li class="nav-switch <?php active('event.php'); ?>"><a class="hvr-sweep-to-right" href="event.php">Events</a></li>
                 <li class="nav-switch"><a class="hvr-sweep-to-right" href="#">Gallary</a></li>
 
 
@@ -41,7 +52,7 @@
                 if($id!='') {
 
                     echo ' <li class="dropdown nav-switch">
-          <a href="" class="dropdown-toggle hvr-sweep-to-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Name <span class="caret"></span></a>
+          <a href="" class="dropdown-toggle hvr-sweep-to-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Amr Sameh <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a class="hvr-sweep-to-right" href="#"><i class="fa fa-user" aria-hidden="true"></i>
 Profile</a></li>
@@ -73,4 +84,5 @@ Settings</a></li>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<div class="start"></div>
 

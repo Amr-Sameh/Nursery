@@ -21,10 +21,12 @@ $(document).ready(function () {
 
 
     $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 9000) {
-            $('nav').addClass('navbar-fixed-top');
+        if ($(window).scrollTop() > 90) {
+            $('.navbar').addClass('navbar-fixed-top');
+            $('.start').addClass('fake');
         } else {
-            $('nav').removeClass('navbar-fixed-top');
+            $('.navbar').removeClass('navbar-fixed-top');
+            $('.start').removeClass('fake');
         }
     });
 
@@ -36,8 +38,4 @@ $(document).ready(function () {
         $("body").load("login.php");
     });
 
-
-    var pathname = window.location.pathname;
-    alert(pathname);
-    $('nav > li > a[href="'+pathname+'"]').parent().addClass('active');
 });
