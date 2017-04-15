@@ -1,5 +1,5 @@
 <?php
-$id='';
+$id='s';
 
 /**
  * Created by PhpStorm.
@@ -21,6 +21,7 @@ $id='';
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/event.css">
 </head>
 <body>
 

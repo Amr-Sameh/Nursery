@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 
     $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 90) {
+        if ($(window).scrollTop() > 9000) {
             $('nav').addClass('navbar-fixed-top');
         } else {
             $('nav').removeClass('navbar-fixed-top');
