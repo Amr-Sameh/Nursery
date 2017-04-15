@@ -35,4 +35,9 @@ $(document).ready(function () {
     {
         $("body").load("login.php");
     });
+
+
+    var pathname = window.location.pathname;
+    alert(pathname);
+    $('nav > li > a[href="'+pathname+'"]').parent().addClass('active');
 });

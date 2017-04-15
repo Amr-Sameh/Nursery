@@ -22,3 +22,5 @@ include_once 'navbar.php'
 <?php
 
 include_once 'static/footer.php';
+$page_num=50;
+include_once 'paging.php';
