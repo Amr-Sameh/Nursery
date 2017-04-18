@@ -10,10 +10,12 @@
 </head>
 <body >
 <div class="uk-offcanvas-content">
-<div class="container " uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+
 
 <ul id="classAtrbiut" class="uk-switcher">
-<li class="post " >
+    <div class="uk-container-expand post ">
+        <div class="container">
+<li >
     <div class="uk-card uk-carde uk-card-default uk-width-2-3@m uk-visible-toggle" >
         <div class="uk-card-header" style="background-color:  #f8f8f8">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -36,7 +38,7 @@ foreach ($listofposts as $post){  ?>
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto uk-border-circle" style="width: 50px;height: 50px;overflow: hidden;padding: 0;margin-right: 5px ">
-                    <img class="" width="100%" height="100%" src="images/680e8cf11faf7ef8e3fe5665fda5e485.jpg">
+                    <img class="" width="100%" height="100%" src="images/child-only.png">
                 </div>
                 <div class="uk-width-expand">
                     <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
@@ -46,7 +48,7 @@ foreach ($listofposts as $post){  ?>
             <div class="uk-width-auto" style="float: right;">
                 <ul class="uk-invisible-hover uk-iconnav">
                     <li><a   uk-icon="icon: pencil" href="#modal-sections" uk-toggle onclick="document.getElementById('edit').innerHTML = document.getElementById('<?php echo"b".$post; ?>').textContent"></a></li>
-                    <li><a   uk-icon="icon: trash"></a></li>
+                    <li><a   uk-icon="icon: trash" href="#remove" uk-toggle></a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +66,7 @@ foreach ($listofposts as $post){  ?>
     <article class="uk-comment uk-comment-primary comment uk-visible-toggle" id="<?php echo $comment.$post;?>">
         <header class="uk-comment-header uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-auto uk-border-circle " style="width: 50px;height: 50px;overflow: hidden;padding: 0;margin-right: 5px ">
-                <img class="uk-comment-avatar " src="images/680e8cf11faf7ef8e3fe5665fda5e485.jpg" width="100%" height="100%" alt="">
+                <img class="uk-comment-avatar " src="images/child-only.png" width="100%" height="100%" alt="">
             </div>
             <div class="uk-width-expand">
                 <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"  >Author</a></h4>
@@ -75,7 +77,7 @@ foreach ($listofposts as $post){  ?>
             <div class="uk-width-auto" style="float: right;">
                 <ul class="uk-invisible-hover uk-iconnav">
                     <li><a   uk-icon="icon: pencil" href="#modal-sections" uk-toggle onclick="document.getElementById('edit').innerHTML = document.getElementById('<?php echo"b".$comment.$post; ?>').textContent"></a></li>
-                    <li><a   uk-icon="icon: trash"></a></li>
+                    <li><a   uk-icon="icon: trash" href="#remove" uk-toggle></a></li>
                 </ul>
             </div>
         </header>
@@ -93,7 +95,9 @@ foreach ($listofposts as $post){  ?>
     </div>
 <?php }?>
 </li>
-    <li></li>
+        </div></div>
+            <div class="uk-container-expand  subject">
+                <div class="container">
     <li>
         <ul id="subjects" class="uk-switcher">
             <?php
@@ -101,7 +105,7 @@ foreach ($listofposts as $post){  ?>
             foreach ($listofsub as $value){
                 ?>
                 <li>
-                    <div class="uk-width-2-3@m" style="margin: auto">
+                    <div class="uk-width-2-3@m" style="margin: auto;background-color: rgba(255,255,255,0.9)">
                         <table class="uk-table uk-table-hover">
                             <thead>
                             <tr>
@@ -119,12 +123,12 @@ foreach ($listofposts as $post){  ?>
                                 <tr>
                                     <td><?php echo"HW".$k;?></td>
                                     <td >
-                                        <button class="uk-button uk-button-default  " style="background-color: #f8f8f8">Download</button>
+                                        <span uk-icon="icon: cloud-download; ratio: 2"></span>
                                     </td>
                                     <td>
                                         <div uk-form-custom>
                                                 <input type="file">
-                                                <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
+                                                <span uk-icon="icon:  cloud-upload; ratio: 2"  tabindex="-1"></span>
                                             </div>
                                         </td>
                                     <td class="uk-text-primary">8</td>
@@ -138,9 +142,11 @@ foreach ($listofposts as $post){  ?>
             <?php } ?>
         </ul>
     </li>
-    <li></li>
+                </div></div>
+                    <div class="uk-container-expand students">
+                        <div class="container">
     <li>
-        <div class="uk-width-2-3@m" style="margin: auto">
+        <div class="uk-width-2-3@m" style="margin: auto;background-color: rgba(255,255,255,0.9)">
             <table class="uk-table uk-table-hover">
                 <thead>
                 <tr>
@@ -155,7 +161,7 @@ foreach ($listofposts as $post){  ?>
                     ?>
                     <tr>
                         <td><div class=" uk-border-circle" style="width: 50px;height: 50px;overflow: hidden;padding: 0; ">
-                                <img class="" width="100%" height="100%" src="images/680e8cf11faf7ef8e3fe5665fda5e485.jpg">
+                                <img class="" width="100%" height="100%" src="images/child-only.png">
                             </div></td>
                         <td >
                             <a class="uk-link-reset"  >Mostafa saleh sopih mohamed</a>
@@ -167,11 +173,13 @@ foreach ($listofposts as $post){  ?>
             </table>
         </div>
     </li>
-    <li></li>
+                        </div></div>
+                            <div class="uk-container-expand Timetable" >
+                                <div class="container">
     <li>
         <div class="uk-grid">
-                <div class="uk-card uk-card-default uk-card-body uk-width-2-3@m ">
-                    <table class="uk-table uk-table-hover">
+                <div class="uk-card uk-card-default uk-card-body uk-width-2-3@m m-scroll">
+                    <table class="uk-table uk-table-hover ">
                         <thead>
                         <tr>
                             <th style="background-color:  #f8f8f8" >Time\Day</th>
@@ -234,16 +242,17 @@ foreach ($listofposts as $post){  ?>
         </div>
         </div>
     </li>
+                                </div></div>
 </ul>
-    <button class="uk-button uk-button-default uk-margin-small-right cata uk-box-shadow-hover-xlarge "  type="button" uk-toggle="target: #offcanvas-push"><a   class="uk-slidenav-large" uk-slidenav-next></a></button>
+    <button class="uk-button uk-margin-small-right cata uk-box-shadow-hover-xlarge "  type="button" uk-toggle="target: #offcanvas-push"><a   class="uk-slidenav-large" uk-slidenav-next></a></button>
 
     <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
         <div class="uk-offcanvas-bar uk-flex uk-flex-column">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-switcher="connect: #classAtrbiut; animation: uk-animation-fade; toggle: > :not(.uk-nav-header)">
-                <li><a  >Home</a></li>
+                <li><a  >Home</a>
 
-                <li class="uk-nav-divider"></li>
+                <p class="uk-heading-divider"></p></li>
                 <li class="uk-parent">
                     <a   uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Subjects</a>
                     <ul class="uk-nav-sub" id="toggle-animation"  hidden="hidden" aria-hidden="true" uk-switcher="connect: #subjects; animation: uk-animation-fade; toggle: > :not(.uk-nav-header)">
@@ -254,10 +263,10 @@ foreach ($listofposts as $post){  ?>
                         }
                         ?>
                     </ul>
-                </li>
-                <li class="uk-nav-divider"></li>
-                <li><a  >Students</a></li>
-                <li class="uk-nav-divider"></li>
+
+                <p class="uk-heading-divider"></p></li>
+                <li><a  >Students</a>
+                <p class="uk-heading-divider"></p></li>
                 <li><a  >TimeTable</a></li>
             </ul>
 
@@ -267,17 +276,25 @@ foreach ($listofposts as $post){  ?>
 </div>
     <div id="modal-sections" uk-modal="center: true">
         <div class="uk-modal-dialog">
-            <button class="uk-modal-close-default" type="button" uk-close></button>
 
             <div class="uk-modal-body" >
                 <textarea class="newPost" id="edit"></textarea>
             </div>
             <div class="uk-modal-footer uk-text-right">
                 <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                <button class="uk-button uk-button-primary" type="button">Save</button>
+                <button class="uk-button uk-button-primary" type="button" >Save</button>
             </div>
         </div>
     </div>
+<div id="remove" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <p>are you sure that you want delete it.</p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary uk-modal-close" type="button">Confirm</button>
+        </p>
+    </div>
+</div>
  <footer>
      <script src="jq/jquery-1.12.3.min.js"></script>
      <script src="jq/bootstrap.min.js"></script>
